@@ -11,6 +11,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Aplikasi Mahasiswa',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.redAccent),
+        useMaterial3: true,
+      ),
       home: const HomePage(),
     );
   }
@@ -23,7 +27,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Belajar Flutter 4'),
+        title: const Text('Dashboard Mahasiswa'),
+        centerTitle: true,
       ),
       body: const Center(
         child: Text('Muhammad Raffi Ar-rosyid'),
